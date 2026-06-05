@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Optionally disable SWC minification if memory is the issue
-  // swcMinify: false,
+  // Disable SWC minification due to bus errors
+  swcMinify: false,
 };
 
 export default nextConfig;

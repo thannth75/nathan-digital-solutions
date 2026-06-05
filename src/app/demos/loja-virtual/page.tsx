@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ShoppingCart, Package, Truck, Shield, Search, Menu, X, ArrowLeft, Star } from "lucide-react";
+import { ShoppingCart, Package, Truck, Shield, Search, Menu, X, ArrowLeft, Star, Check } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 

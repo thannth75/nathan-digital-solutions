@@ -4,20 +4,21 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-surface)] disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-[var(--color-primary)] text-white hover:bg-[var(--color-secondary)]",
+        primary: "bg-[var(--color-primary)] text-white hover:bg-[var(--color-secondary)] shadow-lg shadow-[var(--color-primary)]/20 border border-[var(--color-accent-cyan)]/20",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-red-600 text-white hover:bg-red-700",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-[var(--color-border)] bg-transparent text-white hover:bg-[var(--glass-bg)] hover:border-[var(--color-primary)]/50",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        premium: "bg-[var(--color-primary)] text-white hover:bg-[var(--color-secondary)] shadow-lg shadow-[var(--color-primary)]/20 border border-[var(--color-accent-cyan)]/20 transition-all duration-300",
+          "bg-[var(--color-surface-elevated)] text-white hover:bg-[var(--color-border)]",
+        ghost: "text-white hover:bg-[var(--glass-bg)]",
+        link: "text-[var(--color-primary)] underline-offset-4 hover:underline",
+        premium: "bg-[var(--color-primary)] text-white hover:bg-[var(--color-secondary)] shadow-lg shadow-[var(--color-primary)]/20 border border-[var(--color-accent-cyan)]/20",
         glass: "glass-panel hover:bg-[var(--glass-bg-hover)] text-white",
       },
       size: {
