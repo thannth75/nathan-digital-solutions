@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cake, Heart, Star, Gift, Clock, Instagram, ShoppingBag, ArrowLeft } from "lucide-react";
+import { Cake, Heart, Star, Gift, Clock, Camera, ShoppingBag, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 
@@ -117,7 +117,7 @@ export default function DoceriaDemo() {
           <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
             <div>
               <h2 className="text-3xl font-bold mb-2 flex items-center gap-2" style={{ fontFamily: "'Playfair Display', serif" }}>
-                <Instagram className="text-[#F472B6]" /> Siga no Instagram
+                <Camera className="text-[#F472B6]" /> Siga no Instagram
               </h2>
               <p className="text-white/60">@doceencanto.artesanal</p>
             </div>

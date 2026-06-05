@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Instagram, Monitor, Mail, MapPin } from "lucide-react";
+import { Camera, Monitor, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,7 +19,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-4 mt-2">
             <a href="https://www.linkedin.com/in/nathanpiresdantas/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-[var(--glass-bg)] hover:bg-[var(--color-primary)] transition-colors" aria-label="LinkedIn">
-              <Instagram size={20} />
+              <Camera size={20} />
             </a>
             <a href="https://github.com/thannth75" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-[var(--glass-bg)] hover:bg-[var(--color-primary)] transition-colors" aria-label="GitHub">
               <Monitor size={20} />
